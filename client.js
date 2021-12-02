@@ -12,6 +12,12 @@ const connect = function () {
 
   conn.on('connect', () => {
     conn.write('Name: Nik');
+    conn.write('Move: up');
+    // conn.write('Move: right');
+    // setInterval(() => conn.write('Move: up'),50);
+    // setTimeout(() => conn.write('Move: left', 150));
+    // setTimeout(() => conn.write('Move: up', 200));
+    // setTimeout(() => conn.write('Move: right', 250));
     console.log('Welcome to the SNE-K game!!!');
   });
 
